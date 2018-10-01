@@ -1,10 +1,46 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Document</title>
+  <head>
+    <title>JavaScript Challenges</title>
+    <style>#emailfield{display:none;}
+  </style>
+  <script type= "text/javascript">
+  function toggleEmail(){
+  	var isChecked = document.getElementById("subscriptions").checked;
+  	var email = document.getElementById("emailpara")
+  	if (isChecked){
+  		email.style.display= "block";
+  		 console.log = ("block")
+  	}
+  	else{
+  		email.style.display = "none";
+  		console.log = ("none")
+  	}
+
+  
 </head>
-<body>
-	
-</body>
+
+  <body>
+    <form action="">
+      <fieldset>
+
+        <legend>Email subscriptions</legend>
+
+        <p id="Ross">
+          <label>
+            <input type="checkbox" name="subscribe" id="subscribe">
+            Yes! I would like to receive all of your free candy!
+          </label>
+        </p>
+
+        <p id="emailpara">
+          <label>
+            Email Address: 
+            <input type="text" name="email" id="email">
+          </label>
+        </p>
+
+      </fieldset>
+    </form>
+  </body>
 </html>
