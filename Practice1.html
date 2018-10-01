@@ -2,21 +2,25 @@
 <html lang="en">
   <head>
     <title>JavaScript Challenges</title>
-    <style>#emailfield{display:none;}
-  </style>
-  <script type= "text/javascript">
-  function toggleEmail(){
-  	var isChecked = document.getElementById("subscriptions").checked;
-  	var email = document.getElementById("emailpara")
-  	if (isChecked){
-  		email.style.display= "block";
-  		 console.log = ("block")
-  	}
-  	else{
-  		email.style.display = "none";
-  		console.log = ("none")
-  	}
+    <style>
+    	#emailfield{
+    		display: none;}
+    </style>
+    <script type= "text/javascript">
+    function toggleEmail(){
+  		var isChecked = document.getElementById("subscribe").checked;
+  		var email = document.getElementById("emailpara")
+  		if (isChecked){
+  			email.style.display= "block";
+  		 	console.log = ("block")
+  		}
+  		else{
+  			email.style.display = "none";
+  			console.log = ("none")
+  		}
 
+  	}
+  	</script>
   
 </head>
 
@@ -28,7 +32,7 @@
 
         <p id="Ross">
           <label>
-            <input type="checkbox" name="subscribe" id="subscribe">
+            <input type="checkbox" name="subscribe" id="subscribe" onchange= "toggleEmail()">
             Yes! I would like to receive all of your free candy!
           </label>
         </p>
