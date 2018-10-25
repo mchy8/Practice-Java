@@ -54,18 +54,23 @@
   <head>
     <title>JavaScript Challenges</title>
     <style>
-    	#emailfield{
-    		display:none;
-    	}
-    </style>
-    <script type = "text/javascript">
-    function toggleEmail(){
-    	var isChecked= document.getElementById("subscribe").checked;
-    	var email = document.getElementById("emailpara");
-    	if isChecked(
-    		email.style.display: "block");
-    	else(
-    		email.style.display: "none")
+      #emailfield{
+        display: none;
+      }
+      </style>
+      <script type = "text/javascript">
+        function toggleEmail(){
+          var isChecked = document.getElementById("subscribe")
+          var email = document.getElementById("email")
+          if (isChecked){
+            email.style.display: "block";
+          }
+          else{
+            email.style.display: "none"; 
+          }
+        }
+
+      }
     }
     </script>
   </head>
@@ -93,3 +98,6 @@
     </form>
   </body>
 </html>
+
+<script type = "text/javascript">
+fu
